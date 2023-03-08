@@ -29,3 +29,9 @@ $[\log\{q_i(z_j)\}]$
 对对数似然进一步作变换: 
 
 $\log\{\frac{p(\mathbf{x}_i, z_j)}{p(z_j|\mathbf{x}_i)}\}=\log\{\frac{p(\mathbf{x}_i, z_j)}{q_i(z_j)}\}+\log\{\frac{q_i(z_j)}{p(z_j|\mathbf{x}_i)}\}$
+
+进一步利用近似分布求期望可得: 
+
+$\log\{p(x_i)\}=E_{q}(\log\{\frac{p(\mathbf{x}_i, z_j)}{q_i(z_j)}\})+KL(q||p(z_j|\mathbf{x}_i))$
+
+其中第一项为变分下界, 也就是ELBO, 第二项为KL散度. 最大化ELBO就能够最小化KL散度. 
