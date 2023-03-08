@@ -34,4 +34,4 @@ $\log\{\frac{p(\mathbf{x}_i, z_j)}{p(z_j|\mathbf{x}_i)}\}=\log\{\frac{p(\mathbf{
 
 $\log\{p(x_i)\}=E_{q}(\log\{\frac{p(\mathbf{x}_i, z_j)}{q_i(z_j)}\})+KL(q||p(z_j|\mathbf{x}_i))$
 
-其中第一项为变分下界, 也就是ELBO, 第二项为KL散度. 最大化ELBO就能够最小化KL散度. 
+第二项为KL散度. 最小化KL散度只需最大化第一项即可. 对所有参数采用梯度下降即可得到迭代解.  
