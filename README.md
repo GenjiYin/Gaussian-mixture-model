@@ -16,4 +16,12 @@ $p(x)=\sum\alpha_i N(x; \mu_i, \sigma^2_i)$
 
 ## 2. 变分推断
 以其中一个样本为例, 变换其对数似然: 
+
 $\log\{p(x_i)\}=\log\{\frac{p(\mathbf{x}_i, z_j)}{p(z_j|\mathbf{x}_i)}\}$
+
+直接求解
+$p(z_j|\mathbf{x}_i)$过于复杂, 这里采用变分推断的方法, 用
+$q_i(z_j)$
+去逼近该后验分布, 代码中具体操作流程是初始化一个n行K列的
+$[\log\{q_i(z_j)\}]$
+矩阵. 
