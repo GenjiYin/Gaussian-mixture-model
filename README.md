@@ -4,7 +4,9 @@
 $\mathbf{x}_1$, 
 $\mathbf{x}_2$, 
 ..., 
-$\mathbf{x}_n$
+$
+\mathbf{x}_n
+$
 为观测数据， 且
 $z_1$、
 $z_2$、
