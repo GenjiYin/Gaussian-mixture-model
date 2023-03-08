@@ -1,9 +1,9 @@
 # Gaussian-mixture-model
 ## 数据形式和相关配置
 记
-$\mathbf{x}_1$、
-$\mathbf{x}_2$、
-... 、
+$\mathbf{x}_1$, 
+$\mathbf{x}_2$, 
+..., 
 $\mathbf{x}_n$
 为观测数据， 且
 $z_1$、
