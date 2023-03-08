@@ -25,3 +25,7 @@ $q_i(z_j)$
 去逼近该后验分布, 代码中具体操作流程是初始化一个n行K列的
 $[\log\{q_i(z_j)\}]$
 矩阵. 
+
+对对数似然进一步作变换: 
+
+$\log\{\frac{p(\mathbf{x}_i, z_j)}{p(z_j|\mathbf{x}_i)}\}=\log\{\frac{p(\mathbf{x}_i, z_j)}{q_i(z_j)}\}+\log\{\frac{q_i(z_j)}{p(z_j|\mathbf{x}_i)}\}$
